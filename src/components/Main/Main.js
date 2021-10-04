@@ -8,7 +8,7 @@ import AboutUs from '../AboutUs/AboutUs';
 import NotFound from '../NotFound/NotFound'
 
 const Main = () => {
-    
+    // Using useState and useEffect to load data
     const [course, setCourse] = useState([]);
     useEffect(()=>{
         fetch("./fakeDb.JSON")
@@ -17,7 +17,7 @@ const Main = () => {
     },[])
     return (
         <div>
-            
+            {/* Switch to make them one page application with reload */}
             <Switch>
             <Route exact path="/">
                 <Home course={course}></Home>

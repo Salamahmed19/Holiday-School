@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+// custom style of header and navbar
 const style = { textDecoration: 'none', margin: "15px 45px", fontSize: "30px", fontWeight: "bold"}
 const Header = () => {
     return (

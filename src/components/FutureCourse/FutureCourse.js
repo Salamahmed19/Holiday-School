@@ -2,12 +2,13 @@ import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 
 const FutureCourse = (props) => {
+    // use negetive value of slice to make look different data of future topic
     const {course} =props;
     return (
         <Row>
             {
             course?.slice(-4).map(course => 
-                <Col className="mt-3">  
+                <Col className="mt-3" key={course.id}>  
                     <Card className="shadow-lg rounded" style={{ width: '18rem', height: '500px', padding:'15px' }}>
                         <Card.Img variant="top" src={course.img} className="h-50" />
                         <Card.Body>

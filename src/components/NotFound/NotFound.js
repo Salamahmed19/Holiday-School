@@ -1,5 +1,5 @@
 import React from 'react';
-
+// handle of 404 pages with picture
 const NotFound = () => {
     return (
         <div>

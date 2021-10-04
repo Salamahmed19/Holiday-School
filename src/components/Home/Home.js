@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-
+// using same data to make defferent look of course home page
 const Home = (props) => {
     const {course} =props;
     return (
@@ -11,7 +11,7 @@ const Home = (props) => {
             <Row>
                 {
                 course?.slice(6, 14).map(course => 
-                    <Col className="mt-3">  
+                    <Col className="mt-3"  key={course.id}>  
                         <Card className="shadow-lg rounded" style={{ width: '18rem', height: '500px', padding:'15px' }}>
                             <Card.Img variant="top" src={course.img} className="h-50" />
                             <Card.Body>

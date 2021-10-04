@@ -3,6 +3,7 @@ import { Row } from 'react-bootstrap';
 import Course from '../Course/Course';
 
 const Courses = (props) => {
+    // using map and slice to load data own choices
     const {course}=props;
     return (
         <Row>

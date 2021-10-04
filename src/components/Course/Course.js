@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
 const Course = (props) => {
+    // destructuring props of course
     const {name, img, dec, douration, price, courseStart}= props.course;
     return (
         <Col className="m-2">  
