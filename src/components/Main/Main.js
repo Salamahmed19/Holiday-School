@@ -20,7 +20,7 @@ const Main = () => {
             
             <Switch>
             <Route exact path="/">
-                <Home></Home>
+                <Home course={course}></Home>
             </Route>
             <Route path="/Home">
                 <Home course={course}></Home>
